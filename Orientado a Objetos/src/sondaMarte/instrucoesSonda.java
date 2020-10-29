@@ -8,15 +8,15 @@ public class instrucoesSonda {
 	String movimento;
 	String statusFinal;
 	String opcao;
-	//List<String> lista = new ArrayList<>(); --> OpÁ„o caso utiliza-se List.
+	//List<String> lista = new ArrayList<>(); --> Op√ß√£o caso fosse utilizado List.
 	int x, y, a, l;
-	Scanner ler = new Scanner(System.in); //Criado o objeto ler do tipo Scanner, respons·vel pela leitura das entradas de dados.
+	Scanner ler = new Scanner(System.in); //Criado o objeto ler do tipo Scanner, respons√°vel pela leitura das entradas de dados.
 
-	//MÈtodos P˙blicos Pesonalizados
+	//M√©todos P√∫blicos Personalizados
 	public void terreno(){ 
-		//O mÈtodo terreno, solicita ao usu·rio para informar o tamanho do terreno, 
+		//O m√©todo terreno, solicita ao usu√°rio para informar o tamanho do terreno, 
 		//devendo o mesmo entrar com o valor de x e y.	
-		System.out.println("Informe o tamanho da ·rea do terreno:");
+		System.out.println("Informe o tamanho da √°rea do terreno:");
 		System.out.print("Informe o tamanho de x: ");
 		this.a = ler.nextInt();
 		System.out.print("Informe o tamanho de y: ");
@@ -29,136 +29,136 @@ public class instrucoesSonda {
 	}
 	
 	public void posicaoSonda(){
-		//O mÈtodo posiÁ„o Sonda, solicita ao usu·rio para informar a posiÁ„o inicial da Sonda, 
-		//devendo o mesmo entrar com o valor de x, y e da direÁ„o cardial.
+		//O m√©todo posi√ß√£o Sonda, solicita ao usu√°rio para informar a posi√ß√£o inicial da Sonda, 
+		//devendo o mesmo entrar com o valor de x, y e da dire√ß√£o cardial.
 
-		System.out.println("Informe a posiÁ„o da Sonda:");
-		System.out.print("Entre com a posiÁ„o de x: ");
+		System.out.println("Informe a posi√ß√£o da Sonda:");
+		System.out.print("Entre com a posi√ß√£o de x: ");
 		this.x = ler.nextInt();
-		System.out.print("Entre com a posiÁ„o de y: ");
+		System.out.print("Entre com a posi√ß√£o de y: ");
 		this.y = ler.nextInt();
-		System.out.print("Entre com a direÁ„o cardial: ");
-		this.direcao = ler.next().toUpperCase(); //O mÈtodoo '.toUpperCase()'converte toda a String para caixa alta.
+		System.out.print("Entre com a dire√ß√£o cardial: ");
+		this.direcao = ler.next().toUpperCase(); //O m√©todoo '.toUpperCase()'converte toda a String para caixa alta.
 		
-		System.out.print("\nPosiÁ„o Inicial: "+this.getX()+", "+this.getY()+", "+this.getDirecao()); //Mostra na tela a posiÁ„o inicial informada pelo usu·rio.
+		System.out.print("\nPosi√ß√£o Inicial: "+this.getX()+", "+this.getY()+", "+this.getDirecao()); //Mostra na tela a posi√ß√£o inicial informada pelo usu√°rio.
 	}
 	
 	public void mover(){
-		//O mÈtodo mover, solicita ao usu·rio para informar os movimentos que a sonda ir· realizar,
-		//As entradas aceitas ser„o: 'L' para girar a sonda para esquerda, 'R' para girar para direita, 'M' para andar parfa frente e 'S' para sair.
+		//O m√©todo mover, solicita ao usu√°rio para informar os movimentos que a sonda ir√° realizar,
+		//As entradas aceitas ser√£o: 'L' para girar a sonda para esquerda, 'R' para girar para direita, 'M' para andar e 'S' para sair.
 		System.out.println("Escolha os comandos para a sonda realizar: ");
 		System.out.println("[L] - Para girar para esquerda: ");
 		System.out.println("[R] - Para girar para direita: "); 
-		System.out.println("[M] - Para mover para frente mantendo a mesma direÁ„o: ");
+		System.out.println("[M] - Para mover para frente mantendo a mesma dire√ß√£o: ");
 		System.out.println("[S] - Parar: "); 
 		System.out.println("Digite o comando desejado: ");
 		
-		do{	//O usu·rio ir· informar os movimentos enquanto a entrada for != 'S' ou outro dado diferente do solicitado.
+		do{	//O usu√°rio ir√° informar os movimentos enquanto a entrada for != 'S' ou outro dado diferente do solicitado.
 			
-			this.opcao = ler.next().toUpperCase(); //O mÈtodoo '.toUpperCase()'converte toda a String para caixa alta.
+			this.opcao = ler.next().toUpperCase(); //O m√©todoo '.toUpperCase()'converte toda a String para caixa alta.
 			
 			switch (this.opcao){
 			
-			case "L": //Caso a entrada for igual a 'L' ser· realizado a lÛgica abaixo:
+			case "L": //Caso a entrada for igual a 'L' ser√° realizado a l√≥gica abaixo:
 				if (this.direcao.equals("N")){ 
-				//Se a direÁ„o cardial atual for igual a N, ser· alterado para a direÁ„o W.
+				//Se a dire√ß√£o cardial atual for igual a N, ser√° alterado para a dire√ß√£o W.
 					this.direcao = "W";
 					
 				}else if (this.direcao.equals("E")){
-				//Sen„o se a direÁ„o cardial atual for igual a E, ser· alterado para a direÁ„o N.
+				//Sen√£o se a dire√ß√£o cardial atual for igual a E, ser√° alterado para a dire√ß√£o N.
 					this.direcao = "N";
 					
 				}else if (this.direcao.equals("S")){
-				//Sen„o se a direÁ„o cardial atual for igual a S, ser· alterado para a direÁ„o E.
+				//Sen√£o se a dire√ß√£o cardial atual for igual a S, ser√° alterado para a dire√ß√£o E.
 					this.direcao = "E";
 					
 				}else if (this.direcao.equals("W")){
-				//Sen„o se a direÁ„o cardial atual for igual a W, ser· alterado para a direÁ„o S.
+				//Sen√£o se a dire√ß√£o cardial atual for igual a W, ser√° alterado para a dire√ß√£o S.
 					this.direcao = "S";
 				}
 				break;
 			
-			case "R": //Caso a entrada for igual a 'R' ser· realizado a lÛgica abaixo:
+			case "R": //Caso a entrada for igual a 'R' ser√° realizado a l√≥gica abaixo:
 				if (this.direcao.equals("N")){
-				//Se a direÁ„o cardial atual for igual a N, ser· alterado para a direÁ„o E.
+				//Se a dire√ß√£o cardial atual for igual a N, ser√° alterado para a dire√ß√£o E.
 					this.direcao = "E";
 					
 				}else if (this.direcao.equals("E")){
-				//Sen„o se a direÁ„o cardial atual for igual a E, ser· alterado para a direÁ„o S.
+				//Sen√£o se a dire√ß√£o cardial atual for igual a E, ser√° alterado para a dire√ß√£o S.
 					this.direcao = "S";
 					
 				}else if (this.direcao.equals("S")){
-				//Sen„o se a direÁ„o cardial atual for igual a S, ser· alterado para a direÁ„o W.
+				//Sen√£o se a dire√ß√£o cardial atual for igual a S, ser√° alterado para a dire√ß√£o W.
 					this.direcao = "W";
 				}else if (this.direcao.equals("W")){
-				//Sen„o se a direÁ„o cardial atual for igual a W, ser· alterado para a direÁ„o N.
+				//Sen√£o se a dire√ß√£o cardial atual for igual a W, ser√° alterado para a dire√ß√£o N.
 					this.direcao = "N";
 				}
 				break;
 			
-			case "M": //Caso a entrada for igual a 'M' ser· realizado a lÛgica abaixo:
-				// Caso as posiÁıes x ou y forem menor do que l ou a, n„o ser· possÌvel realizar o movimento, pois estar· fora da ·rea permitida.
+			case "M": //Caso a entrada for igual a 'M' ser√° realizado a l√≥gica abaixo:
+				// Caso as posi√ß√µes x ou y forem menor do que l ou a, n√£o ser√° poss√≠vel realizar o movimento, pois estar√° fora da √°rea permitida.
 				if (this.direcao.equals("N") && this.y < this.l){
-				//Se a direÁ„o cardial atual for igual a N e a posiÁ„o de y for menor do que l, y ir· andar para frente.
+				//Se a dire√ß√£o cardial atual for igual a N e a posi√ß√£o de y for menor do que l, y ir√° andar para frente.
 					this.y = this.y + 1;
 				}else if (this.direcao.equals("S") && y < this.l){
-				//Sen„o se a direÁ„o cardial atual for igual a S e a posiÁ„o de y for menor do que l, y ir· andar para tr·s.
+				//Sen√£o se a dire√ß√£o cardial atual for igual a S e a posi√ß√£o de y for menor do que l, y ir√° andar para tr√°s.
 					this.y = this.y - 1;
 				}else if (direcao.equals("E") && this.x < this.a){
-				//Sen„o se a direÁ„o cardial atual for igual a E e a posiÁ„o de x for menor do que a, x ir· andar para frente.
+				//Sen√£o se a dire√ß√£o cardial atual for igual a E e a posi√ß√£o de x for menor do que a, x ir√° andar para frente.
 					this.x = this.x + 1;
 				}else if (direcao.equals("W") && this.x < this.a){
-				//Sen„o se a direÁ„o cardial atual for igual a W e a posiÁ„o de x for menor do que a, x ir· andar para tr·s.
+				//Sen√£o se a dire√ß√£o cardial atual for igual a W e a posi√ß√£o de x for menor do que a, x ir√° andar para tr√°s.
 					this.x = this.x - 1;
 				
 				}else {
-				//Sen„o o movimento n„o ser· computado, pois entende-se que estar· fora do terreno.
-					System.out.println("Fora da ·rea permitida!"); //Movimento n„o computado.
+				//Sen√£o o movimento n√£o ser√° computado, pois entende-se que estar√° fora do terreno.
+					System.out.println("Fora da √°rea permitida!"); //Movimento n√£o computado.
 				}
 				break;
 			
-			case "S": //Caso a entrada for igual a 'S' ser· interrompido os movimentos.
+			case "S": //Caso a entrada for igual a 'S' ser√° interrompido os movimentos.
 				System.out.println("\n\n");
 				break;
 				
-			default: //Caso a entrada seja diferente das permitidas ir· aparecer a mensagem abaixo.
-				System.out.println("VocÍ digitou uma opÁ„o inv·lida!");
+			default: //Caso a entrada seja diferente das permitidas ir√° aparecer a mensagem abaixo.
+				System.out.println("Voc√™ digitou uma op√ß√£o inv√°lida!");
 			}
-			// lista.add(this.opcao); --> OpÁ„o para add todos os comandos realizados em uma lista.
+			// lista.add(this.opcao); --> Op√ß√£o para add todos os comandos realizados em uma lista.
 			
 		}while(this.opcao.equals("L") || this.opcao.equals("M") || this.opcao.equals("R"));
 		
-		//System.out.println(lista); --> OpÁ„o para mostrar todos os comandos realizados em forma de lista.
+		//System.out.println(lista); --> Op√ß√£o para mostrar todos os comandos realizados em forma de lista.
 	}
 
 	public void status(){
-		//O mÈtodo status ir· apresentar a posiÁ„o final da sonda, pegando a informaÁ„o de 'x', 'y', 'direcao'.
+		//O m√©todo status ir√° apresentar a posi√ß√£o final da sonda, pegando a informa√ß√£o de 'x', 'y', 'direcao'.
 		System.out.print(+this.getX()+", "+this.getY()+", "+this.getDirecao()+"\n");
 	}
 
-	//MÈtodos Getters
+	//M√©todos Getters
 	public String getDirecao() {
-		//O mÈtodo get de direÁ„o ir· retornar o valor de 'direcao'.
+		//O m√©todo get de dire√ß√£o ir√° retornar o valor de 'direcao'.
 		return this.direcao;
 	}
 
 	public int getX() {
-		//O mÈtodo get de x ir· retornar o valor de 'x'.
+		//O m√©todo get de x ir√° retornar o valor de 'x'.
 		return this.x;
 	}
 
 	public int getY() {
-		//O mÈtodo get de y ir· retornar o valor de 'y'.
+		//O m√©todo get de y ir√° retornar o valor de 'y'.
 		return this.y;
 	}
 	
 	public int getA() {
-		//O mÈtodo get de a ir· retornar o valor de 'a'.
+		//O m√©todo get de a ir√° retornar o valor de 'a'.
 		return this.a;
 	}
 	
 	public int getL() {
-		//O mÈtodo get de l ir· retornar o valor de 'l'.
+		//O m√©todo get de l ir√° retornar o valor de 'l'.
 		return this.l;
 	}
 
