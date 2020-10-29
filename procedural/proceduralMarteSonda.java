@@ -1,4 +1,4 @@
-package testeDeProgramaÁ„oElo7;
+package testeDePrograma√ß√£oElo7;
 
 import java.util.*;
 public class proceduralMarteSonda {
@@ -9,207 +9,207 @@ public class proceduralMarteSonda {
 	{
 		ler = new Scanner(System.in);
 		
-		//DeclaraÁ„o das vari·veis
+		//Declara√ß√£o das vari√°veis
 		int a, l, x1 , y1, x2, y2;
 		String opcao, direcao1, direcao2;
 		
 		
 		System.out.print("Informe o tamanho do terreno - Altura: ");
 		a = ler.nextInt();
-		//Solicitado para que o usu·rio informe o tamanho do terreno.
+		//Solicitado para que o usu√°rio informe o tamanho do terreno.
 		System.out.print("Informe o tamanho do terreno - Largura: ");
 		l = ler.nextInt();
 		
-		//1™ Sonda
-		System.out.println("Informe a localizaÁ„o da 1™ Sonda: ");
-		//Solicitado para que o usu·rio informe s localicaÁ„o inicial da 1™ Sonda, devendo informar as posiÁıes de x, y e direÁ„o cardial.
-		System.out.print("Informe a localizaÁ„o de x: ");
+		//1¬™ Sonda
+		System.out.println("Informe a localiza√ß√£o da 1¬™ Sonda: ");
+		//Solicitado para que o usu√°rio informe a localica√ß√£o inicial da 1¬™ Sonda, devendo informar as posi√ß√µes de x, y e dire√ß√£o cardial.
+		System.out.print("Informe a localiza√ß√£o de x: ");
 		x1 = ler.nextInt();
-		System.out.print("Informe a localizaÁ„o de y: ");
+		System.out.print("Informe a localiza√ß√£o de y: ");
 		y1 = ler.nextInt();
-		System.out.print("Informe a posiÁ„o N, S, E ou W: ");
-		direcao1 = ler.next().toUpperCase(); //O mÈtodo '.toUpperCase()'converte toda a String para caixa alta.
+		System.out.print("Informe a posi√ß√£o N, S, E ou W: ");
+		direcao1 = ler.next().toUpperCase(); //O m√©todo '.toUpperCase()'converte toda a String para caixa alta.
 
 		System.out.println("Escolha os comandos para a sonda realizar: ");
-		//Solicita ao usu·rio para informar os movimentos que a sonda ir· realizar,
-		//As entradas aceitas ser„o: 'L' para girar a sonda para esquerda, 'R' para girar para direita, 'M' para andar parfa frente e 'S' para sair.
+		//Solicita ao usu√°rio para informar os movimentos que a sonda ir√° realizar,
+		//As entradas aceitas ser√£o: 'L' para girar a sonda para esquerda, 'R' para girar para direita, 'M' para andar e 'S' para sair.
 		System.out.println("[L] - Para girar para esquerda: ");
 		System.out.println("[R] - Para girar para direita: "); 
-		System.out.println("[M] - Para mover para frente mantendo a mesma direÁ„o: ");
+		System.out.println("[M] - Para mover para frente mantendo a mesma dire√ß√£o: ");
 		System.out.println("[S] - Parar: ");
 		System.out.println("Digite o comando desejado: ");
 		
-		do{ //O usu·rio ir· informar os movimentos enquanto a entrada for != 'S' ou outro dado diferente do solicitado.
+		do{ //O usu√°rio ir√° informar os movimentos enquanto a entrada for != 'S' ou outro dado diferente do solicitado.
 			
-			opcao = ler.next().toUpperCase(); //O mÈtodo '.toUpperCase()'converte toda a String para caixa alta.
+			opcao = ler.next().toUpperCase(); //O m√©todo '.toUpperCase()'converte toda a String para caixa alta.
 			
 			switch (opcao){
 			
-			case "L"://Caso a entrada for igual a 'L' ser· realizado a lÛgica abaixo:
+			case "L"://Caso a entrada for igual a 'L' ser√° realizado a l√≥gica abaixo:
 				if (direcao1.equals("N")){
-				//Se a direÁ„o cardial atual for igual a N, ser· alterado para a direÁ„o W.
+				//Se a dire√ß√£o cardial atual for igual a N, ser√° alterado para a dire√ß√£o W.
 					direcao1 = "W";
 					
 				}else if (direcao1.equals("E")){
-				//Sen„o se a direÁ„o cardial atual for igual a E, ser· alterado para a direÁ„o N.
+				//Sen√£o se a dire√ß√£o cardial atual for igual a E, ser√° alterado para a dire√ß√£o N.
 					direcao1 = "N";
 					
 				}else if (direcao1.equals("S")){
-				//Sen„o se a direÁ„o cardial atual for igual a S, ser· alterado para a direÁ„o E.
+				//Sen√£o se a dire√ß√£o cardial atual for igual a S, ser√° alterado para a dire√ß√£o E.
 					direcao1 = "E";
 					
 				}else if (direcao1.equals("W")){
-				//Sen„o se a direÁ„o cardial atual for igual a W, ser· alterado para a direÁ„o S.
+				//Sen√£o se a dire√ß√£o cardial atual for igual a W, ser√° alterado para a dire√ß√£o S.
 					direcao1 = "S";
 				}
 				break;
 			
-			case "R": //Caso a entrada for igual a 'R' ser· realizado a lÛgica abaixo:
+			case "R": //Caso a entrada for igual a 'R' ser√° realizado a l√≥gica abaixo:
 				if (direcao1.equals("N")){
-				//Se a direÁ„o cardial atual for igual a N, ser· alterado para a direÁ„o E.
+				//Se a dire√ß√£o cardial atual for igual a N, ser√° alterado para a dire√ß√£o E.
 					direcao1 = "E";
 					
 				}else if (direcao1.equals("E")){
-				//Sen„o se a direÁ„o cardial atual for igual a E, ser· alterado para a direÁ„o S.
+				//Sen√£o se a dire√ß√£o cardial atual for igual a E, ser√° alterado para a dire√ß√£o S.
 					direcao1 = "S";
 					
 				}else if (direcao1.equals("S")){
-				//Sen„o se a direÁ„o cardial atual for igual a S, ser· alterado para a direÁ„o W.
+				//Sen√£o se a dire√ß√£o cardial atual for igual a S, ser√° alterado para a dire√ß√£o W.
 					direcao1 = "W";
 				}else if (direcao1.equals("W")){
-				//Sen„o se a direÁ„o cardial atual for igual a W, ser· alterado para a direÁ„o N.
+				//Sen√£o se a dire√ß√£o cardial atual for igual a W, ser√° alterado para a dire√ß√£o N.
 					direcao1 = "N";
 				}
 				break;
 			
-			case "M": //Caso a entrada for igual a 'M' ser· realizado a lÛgica abaixo:
-				// Caso as posiÁıes x ou y forem menor do que l ou a, n„o ser· possÌvel realizar o movimento, pois estar· fora da ·rea permitida.
+			case "M": //Caso a entrada for igual a 'M' ser√° realizado a l√≥gica abaixo:
+				// Caso as posi√ß√µes x ou y forem menor do que l ou a, n√£o ser√° poss√≠vel realizar o movimento, pois estar√° fora da √°rea permitida.
 				if (direcao1.equals("N") && y1 < l){
-				//Se a direÁ„o cardial atual for igual a N e a posiÁ„o de y for menor do que l, y ir· andar para frente.
+				//Se a dire√ß√£o cardial atual for igual a N e a posi√ß√£o de y for menor do que l, y ir√° andar para frente.
 					y1 = y1 + 1;
 					
 				}else if (direcao1.equals("S") && y1 < l){
-				//Sen„o se a direÁ„o cardial atual for igual a S e a posiÁ„o de y for menor do que l, y ir· andar para tr·s.
+				//Sen√£o se a dire√ß√£o cardial atual for igual a S e a posi√ß√£o de y for menor do que l, y ir√° andar para tr√°s.
 					y1 = y1 - 1;
 					
 				}else if (direcao1.equals("E") && x1 < a){
-				//Sen„o se a direÁ„o cardial atual for igual a E e a posiÁ„o de x for menor do que a, x ir· andar para frente.
+				//Sen√£o se a dire√ß√£o cardial atual for igual a E e a posi√ß√£o de x for menor do que a, x ir√° andar para frente.
 					x1 = x1 + 1;
 				}else if (direcao1.equals("W") && x1 < a){
-				//Sen„o se a direÁ„o cardial atual for igual a W e a posiÁ„o de x for menor do que a, x ir· andar para tr·s.
+				//Sen√£o se a dire√ß√£o cardial atual for igual a W e a posi√ß√£o de x for menor do que a, x ir√° andar para tr√°s.
 					x1 = x1 - 1;
 					
 				}else {
-				//Sen„o o movimento n„o ser· computado, pois entende-se que estar· fora do terreno.
-					System.out.println("Fora da ·rea permitida!"); //Movimento n„o computado.
+				//Sen√£o o movimento n√£o ser√° computado, pois entende-se que estar√° fora do terreno.
+					System.out.println("Fora da √°rea permitida!"); //Movimento n√£o computado.
 				}
 				break;
 			
-			case "S": //Caso a entrada for igual a 'S' ser· interrompido os movimentos.
+			case "S": //Caso a entrada for igual a 'S' ser√° interrompido os movimentos.
 				System.out.println("\n\n");
 				break;
 				
-			default: //Caso a entrada seja diferente das permitidas ir· aparecer a mensagem abaixo.
-				System.out.println("VocÍ digitou uma opÁ„o inv·lida!");
+			default: //Caso a entrada seja diferente das permitidas ir√° aparecer a mensagem abaixo.
+				System.out.println("Voc√™ digitou uma op√ß√£o inv√°lida!");
 			}		
 		}while(opcao.equals("L") || opcao.equals("M") || opcao.equals("R"));
 		
-		//2™ Sonda
-		System.out.println("Informe a localizaÁ„o da 2™ Sonda: ");
-		//Solicitado para que o usu·rio informe s localicaÁ„o inicial da 2™ Sonda, devendo informar as posiÁıes de x, y e direÁ„o cardial.
-		System.out.print("Informe a localizaÁ„o de x: ");
+		//2¬™ Sonda
+		System.out.println("Informe a localiza√ß√£o da 2¬™ Sonda: ");
+		//Solicitado para que o usu√°rio informe a localica√ß√£o inicial da 2¬™ Sonda, devendo informar as posi√ß√µes de x, y e dire√ß√£o cardial.
+		System.out.print("Informe a localiza√ß√£o de x: ");
 		x2 = ler.nextInt();
-		System.out.print("Informe a localizaÁ„o de y: ");
+		System.out.print("Informe a localiza√ß√£o de y: ");
 		y2 = ler.nextInt();
-		System.out.print("Informe a posiÁ„o N, S, E ou W: ");
-		direcao2 = ler.next().toUpperCase(); //O mÈtodo '.toUpperCase()'converte toda a String para caixa alta.
+		System.out.print("Informe a posi√ß√£o N, S, E ou W: ");
+		direcao2 = ler.next().toUpperCase(); //O m√©todo '.toUpperCase()'converte toda a String para caixa alta.
 
 		System.out.println("Escolha os comandos para a sonda realizar: ");
-		//Solicita ao usu·rio para informar os movimentos que a sonda ir· realizar,
-		//As entradas aceitas ser„o: 'L' para girar a sonda para esquerda, 'R' para girar para direita, 'M' para andar parfa frente e 'S' para sair.
+		//Solicita ao usu√°rio para informar os movimentos que a sonda ir√° realizar,
+		//As entradas aceitas ser√£o: 'L' para girar a sonda para esquerda, 'R' para girar para direita, 'M' para andar e 'S' para sair.
 		System.out.println("[L] - Para virar para esquerda: ");
 		System.out.println("[R] - Para virar para direita: "); 
-		System.out.println("[M] - Para mover para frente mantendo a mesma direÁ„o: ");
+		System.out.println("[M] - Para mover para frente mantendo a mesma dire√ß√£o: ");
 		System.out.println("[S] - Parar: ");
 		System.out.println("Digite o comando desejado: ");
 		
-		do{ //O usu·rio ir· informar os movimentos enquanto a entrada for != 'S' ou outro dado diferente do solicitado.
+		do{ //O usu√°rio ir√° informar os movimentos enquanto a entrada for != 'S' ou outro dado diferente do solicitado.
 			
-			opcao = ler.next().toUpperCase(); //O mÈtodo '.toUpperCase()'converte toda a String para caixa alta.
+			opcao = ler.next().toUpperCase(); //O m√©todo '.toUpperCase()'converte toda a String para caixa alta.
 			
 			switch (opcao){
 			
-			case "L"://Caso a entrada for igual a 'L' ser· realizado a lÛgica abaixo:
+			case "L"://Caso a entrada for igual a 'L' ser√° realizado a l√≥gica abaixo:
 				if (direcao1.equals("N")){
-				//Se a direÁ„o cardial atual for igual a N, ser· alterado para a direÁ„o W.
+				//Se a dire√ß√£o cardial atual for igual a N, ser√° alterado para a dire√ß√£o W.
 					direcao1 = "W";
 					
 				}else if (direcao1.equals("E")){
-				//Sen„o se a direÁ„o cardial atual for igual a E, ser· alterado para a direÁ„o N.
+				//Sen√£o se a dire√ß√£o cardial atual for igual a E, ser√° alterado para a dire√ß√£o N.
 					direcao1 = "N";
 					
 				}else if (direcao1.equals("S")){
-				//Sen„o se a direÁ„o cardial atual for igual a S, ser· alterado para a direÁ„o E.
+				//Sen√£o se a dire√ß√£o cardial atual for igual a S, ser√° alterado para a dire√ß√£o E.
 					direcao1 = "E";
 					
 				}else if (direcao1.equals("W")){
-				//Sen„o se a direÁ„o cardial atual for igual a W, ser· alterado para a direÁ„o S.
+				//Sen√£o se a dire√ß√£o cardial atual for igual a W, ser√° alterado para a dire√ß√£o S.
 					direcao1 = "S";
 				}
 				break;
 			
-			case "R": //Caso a entrada for igual a 'R' ser· realizado a lÛgica abaixo:
+			case "R": //Caso a entrada for igual a 'R' ser√° realizado a l√≥gica abaixo:
 				if (direcao1.equals("N")){
-				//Se a direÁ„o cardial atual for igual a N, ser· alterado para a direÁ„o E.
+				//Se a dire√ß√£o cardial atual for igual a N, ser√° alterado para a dire√ß√£o E.
 					direcao1 = "E";
 					
 				}else if (direcao1.equals("E")){
-				//Sen„o se a direÁ„o cardial atual for igual a E, ser· alterado para a direÁ„o S.
+				//Sen√£o se a dire√ß√£o cardial atual for igual a E, ser√° alterado para a dire√ß√£o S.
 					direcao1 = "S";
 					
 				}else if (direcao1.equals("S")){
-				//Sen„o se a direÁ„o cardial atual for igual a S, ser· alterado para a direÁ„o W.
+				//Sen√£o se a dire√ß√£o cardial atual for igual a S, ser√° alterado para a dire√ß√£o W.
 					direcao1 = "W";
 				}else if (direcao1.equals("W")){
-				//Sen„o se a direÁ„o cardial atual for igual a W, ser· alterado para a direÁ„o N.
+				//Sen√£o se a dire√ß√£o cardial atual for igual a W, ser√° alterado para a dire√ß√£o N.
 					direcao1 = "N";
 				}
 				break;
 			
-			case "M": //Caso a entrada for igual a 'M' ser· realizado a lÛgica abaixo:
-				// Caso as posiÁıes x ou y forem menor do que l ou a, n„o ser· possÌvel realizar o movimento, pois estar· fora da ·rea permitida.
+			case "M": //Caso a entrada for igual a 'M' ser√° realizado a l√≥gica abaixo:
+				// Caso as posi√ß√µes x ou y forem menor do que l ou a, n√£o ser√° poss√≠vel realizar o movimento, pois estar√° fora da √°rea permitida.
 				if (direcao1.equals("N") && y1 < l){
-				//Se a direÁ„o cardial atual for igual a N e a posiÁ„o de y for menor do que l, y ir· andar para frente.
+				//Se a dire√ß√£o cardial atual for igual a N e a posi√ß√£o de y for menor do que l, y ir√° andar para frente.
 					y1 = y1 + 1;
 					
 				}else if (direcao1.equals("S") && y1 < l){
-				//Sen„o se a direÁ„o cardial atual for igual a S e a posiÁ„o de y for menor do que l, y ir· andar para tr·s.
+				//Sen√£o se a dire√ß√£o cardial atual for igual a S e a posi√ß√£o de y for menor do que l, y ir√° andar para tr√°s.
 					y1 = y1 - 1;
 					
 				}else if (direcao1.equals("E") && x1 < a){
-				//Sen„o se a direÁ„o cardial atual for igual a E e a posiÁ„o de x for menor do que a, x ir· andar para frente.
+				//Sen√£o se a dire√ß√£o cardial atual for igual a E e a posi√ß√£o de x for menor do que a, x ir√° andar para frente.
 					x1 = x1 + 1;
 				}else if (direcao1.equals("W") && x1 < a){
-				//Sen„o se a direÁ„o cardial atual for igual a W e a posiÁ„o de x for menor do que a, x ir· andar para tr·s.
+				//Sen√£o se a dire√ß√£o cardial atual for igual a W e a posi√ß√£o de x for menor do que a, x ir√° andar para tr√°s.
 					x1 = x1 - 1;
 					
 				}else {
-				//Sen„o o movimento n„o ser· computado, pois entende-se que estar· fora do terreno.
-					System.out.println("Fora da ·rea permitida!"); //Movimento n„o computado.
+				//Sen√£o o movimento n√£o ser√° computado, pois entende-se que estar√° fora do terreno.
+					System.out.println("Fora da √°rea permitida!"); //Movimento n√£o computado.
 				}
 				break;
 			
-			case "S": //Caso a entrada for igual a 'S' ser· interrompido os movimentos.
+			case "S": //Caso a entrada for igual a 'S' ser√° interrompido os movimentos.
 				System.out.println("\n\n");
 				break;
 				
-			default: //Caso a entrada seja diferente das permitidas ir· aparecer a mensagem abaixo.
-				System.out.println("VocÍ digitou uma opÁ„o inv·lida!");
+			default: //Caso a entrada seja diferente das permitidas ir√° aparecer a mensagem abaixo.
+				System.out.println("Voc√™ digitou uma op√ß√£o inv√°lida!");
 			}		
 		}while(opcao.equals("L") || opcao.equals("M") || opcao.equals("R"));
 		
-		// Ser· apresentado a posiÁ„o final das duas sondas, pegando a informaÁ„o de 'x', 'y', 'direcao'.
-		System.out.printf("\nPosiÁ„o final:\n	1™ Sonda: %d %d %s\n	2™ Sonda: %d %d %s", x1, y1, direcao1, x2, y2, direcao2);
+		// Ser√° apresentado a posi√ß√£o final das duas sondas, pegando a informa√ß√£o de 'x', 'y', 'direcao'.
+		System.out.printf("\nPosi√ß√£o final:\n	1¬™ Sonda: %d %d %s\n	2¬™ Sonda: %d %d %s", x1, y1, direcao1, x2, y2, direcao2);
 
 	}
 }
