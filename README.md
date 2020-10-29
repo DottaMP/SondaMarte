@@ -1,6 +1,9 @@
 # Explorando Marte :rocket:
 
-**Teste de Programação Elo7**    [Repositório Teste](https://gist.github.com/elo7-developer/1a40c96a5d062b69f02c "Clique Aqui")
+<br>
+
+**Teste de Programação Elo7**    
+[Repositório Teste](https://gist.github.com/elo7-developer/1a40c96a5d062b69f02c "Clique Aqui")
 
 ## Objetivo
 Criar um programa que processe uma série de instruções enviadas para as sondas que estão explorando Marte.
@@ -8,11 +11,9 @@ O planalto é divido numa malha para simplificar a navegação.
 Para controlar as sondas, a NASA envia uma simples sequência de letras. As letras possíveis são "L", "R" e "M". Destas, "L" e "R" fazem a sonda virar 90 graus para a esquerda ou direita, respectivamente, sem mover a sonda. "M" faz com que a sonda mova-se para a frente um ponto da malha, mantendo a mesma direção.
 Forma de *entrada* e *saída* é livre.
 
-### Pensando na Solução
+### Pensando na Solução :bulb:
 Foi realizado primeiro um programa simples de forma *procedural*,[ Link no código](https://github.com/DottaMP/SondaMarte/tree/main/procedural "Clique Aqui"), pensando como prioridade a lógica que seria utilizada para que a saída ocorresse conforme o esperado.    
 Após chegar na lógica esperada, foi pensando na aplicação feita através de métodos utilizando a *orientação a objetos*,[ Link no código](https://github.com/DottaMP/SondaMarte/tree/main/Orientado%20a%20Objetos "Clique Aqui"), onde foi construído o main 'sondaMarte' responsável por chamar os métodos da classe instrucoesSonda.
-
-<br>
 
 ### Entrada
 *Incluído a Letra 'S' para parar os comandos.*
