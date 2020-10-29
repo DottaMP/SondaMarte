@@ -12,8 +12,8 @@ Para controlar as sondas, a NASA envia uma simples sequência de letras. As letr
 Forma de *entrada* e *saída* é livre.
 
 ### Pensando na Solução :bulb:
-Foi realizado primeiro um programa simples de forma *procedural*,[ Link no código](https://github.com/DottaMP/SondaMarte/tree/main/procedural "Clique Aqui"), pensando como prioridade a lógica que seria utilizada para que a saída ocorresse conforme o esperado.    
-Após chegar na lógica esperada, foi pensando na aplicação feita através de métodos utilizando a *orientação a objetos*,[ Link no código](https://github.com/DottaMP/SondaMarte/tree/main/Orientado%20a%20Objetos "Clique Aqui"), onde foi construído o main 'sondaMarte' responsável por chamar os métodos da classe instrucoesSonda.
+Foi realizado primeiro um programa simples de forma *procedural*,[ Link do código](https://github.com/DottaMP/SondaMarte/tree/main/procedural "Clique Aqui"), pensando como prioridade a lógica que seria utilizada para que a saída ocorresse conforme o esperado.    
+Após chegar na lógica esperada, foi pensando na aplicação feita através de métodos utilizando a *orientação a objetos*,[ Link do código](https://github.com/DottaMP/SondaMarte/tree/main/Orientado%20a%20Objetos "Clique Aqui"), onde foi construído o main 'sondaMarte' responsável por chamar os métodos da classe instrucoesSonda.
 
 ### Entrada
 *Incluído a Letra 'S' para parar os comandos.*
