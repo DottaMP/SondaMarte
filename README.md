@@ -12,14 +12,14 @@ Para controlar as sondas, a NASA envia uma simples sequência de letras. As letr
 Forma de *entrada* e *saída* é livre.
 
 ### Pensando na Solução :bulb:
-Foi realizado primeiro um programa simples de forma *procedural*,[ Link do código](https://github.com/DottaMP/SondaMarte/tree/main/procedural "Clique Aqui"), pensando como prioridade a lógica que seria utilizada para que a saída ocorresse conforme o esperado.    
-Após chegar na lógica esperada, foi pensando na aplicação feita através de métodos utilizando a *orientação a objetos*,[ Link do código](https://github.com/DottaMP/SondaMarte/tree/main/Orientado%20a%20Objetos "Clique Aqui"), onde foi construído o main 'sondaMarte' responsável por chamar os métodos da classe instrucoesSonda.
+Foi realizado primeiro um programa simples de forma [procedural](https://github.com/DottaMP/SondaMarte/tree/main/procedural "Clique Aqui"), pensando como prioridade a lógica que seria utilizada para que a saída ocorresse conforme o esperado.    
+Após chegar na lógica esperada, foi pensando na aplicação feita através de métodos utilizando a [orientação a objetos](https://github.com/DottaMP/SondaMarte/tree/main/Orientado%20a%20Objetos "Clique Aqui"), onde foi construído o main 'sondaMarte' responsável por chamar os métodos da classe instrucoesSonda.
 
 ### Entrada
-*Incluído a Letra 'S' para parar os comandos.*
-A entrada de dados foi construída para que fosse solicitado ao usuário as informações, tamanho do terreno, localização inicial da sonda e comandos realizados por essa. Porém é possível também fixar valores nos métodos, fazendo com que não seja necessário que o usuário informe dados.    
+*Incluído a Letra 'S' para parar os comandos.*    
+A entrada de dados foi construída para que fosse solicitado ao usuário as informações, tamanho do terreno, localização inicial da sonda e comandos realizados por essa. Porém é possível também fixar valores nos métodos, fazendo com que não seja necessário que o usuário informe todos os dados.    
 
-| Entrada dos Dados | 
+| Entrada dos Dados |  
 |------|
 |Informe o tamanho da área do terreno:|
 |Informe o tamanho de x: 5|
@@ -77,7 +77,7 @@ A entrada de dados foi construída para que fosse solicitado ao usuário as info
 |S| 
  
 ## Saída
-
+Na saída, é apresentado a localização final das sondas, mostrando as posições de x, y e direção cardeal, respectivamente.
 | Saída dos Dados | 
 |------|
 |Posição Final 1ª Sonda: 1, 3, N|
