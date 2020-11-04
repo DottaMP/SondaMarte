@@ -16,14 +16,14 @@ Foi realizado primeiro um programa simples de forma [procedural](https://github.
 Após chegar na lógica esperada, foi pensando na aplicação feita através de métodos utilizando a [orientação a objetos](https://github.com/DottaMP/SondaMarte/tree/main/Orientado%20a%20Objetos/src/sondaMarte "Clique Aqui"), onde foi construído o main 'sondaMarte' responsável por chamar os métodos da classe instrucoesSonda.
 
 ### Entrada
-*Incluído a Letra 'S' para parar os comandos.*    
-A entrada de dados foi construída para que fosse solicitado ao usuário as informações, tamanho do terreno, localização inicial da sonda e comandos realizados por essa. Porém é possível também fixar valores nos métodos, fazendo com que não seja necessário que o usuário informe todos os dados.    
+Incluído a Letra *'S'* para parar os comandos.    
+A entrada de dados foi construída para que fosse solicitado ao usuário as informações, tamanho do terreno, localização inicial da sonda e comandos realizados por essa.    
 
 | Entrada dos Dados |  
 |------|
 |Informe o tamanho do terreno: 5 5|
 ||
-|Informe a posição da Sonda e a direção cardial: 1 2 N|
+|Informe a posição da Sonda e a direção cardeal: 1 2 N|
 ||
 |Escolha os comandos para a sonda realizar:| 
 |[L] - Para girar para esquerda: |
@@ -43,7 +43,7 @@ A entrada de dados foi construída para que fosse solicitado ao usuário as info
 |S|
 |Informe o tamanho da área do terreno: 5 5|
 ||
-|Informe a posição da Sonda e a direção cardial: 3 3 E|
+|Informe a posição da Sonda e a direção cardeal: 3 3 E|
 ||
 |Escolha os comandos para a sonda realizar:| 
 |[L] - Para girar para esquerda: |
