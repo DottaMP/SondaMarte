@@ -64,7 +64,7 @@ public class instrucoesSonda {
 		System.out.print("Entre com a posição de y: ");
 		this.y = ler.nextInt();
 		System.out.print("Entre com a direção cardeal: ");
-		this.direcao = ler.next().toUpperCase(); //O métodoo '.toUpperCase()'converte toda a String para caixa alta.*/
+		this.direcao = ler.next().toUpperCase(); //O método '.toUpperCase()'converte toda a String para caixa alta.*/
 	}
 	
 	public void mover(){
@@ -80,9 +80,9 @@ public class instrucoesSonda {
 		
 		do{	//O usuário irá informar os movimentos enquanto a entrada for != 'S'.
 				
-			this.opcao = ler.next().toUpperCase(); //O métodoo '.toUpperCase()'converte toda a String para caixa alta.
+			this.opcao = ler.next().toUpperCase(); //O método '.toUpperCase()'converte toda a String para caixa alta.
 
-				switch (this.opcao){
+			switch (this.opcao){
 				case "L": //Caso a entrada for igual a 'L' será realizado a lógica abaixo:
 					if (this.direcao.equals("N")){ 
 					//Se a direção cardeal atual for igual a N, será alterado para a direção W.
@@ -141,14 +141,14 @@ public class instrucoesSonda {
 					}
 					break;
 				
-				case "S": //Caso a entrada for igual a 'S' será interrompido os movimentos e saíra do laço de repetição.
+				case "S": //Caso a entrada for igual a 'S' será interrompido os movimentos.
 					break;
 					
 				default: //Caso a entrada seja diferente das permitidas irá aparecer a mensagem abaixo.
 					System.out.println("Você digitou uma opção inválida!");
 					break;
-				}
-			}while(!this.opcao.equals("S"));
+			}
+		}while(!this.opcao.equals("S"));
 	}
 	
 	public void status(){
@@ -181,5 +181,4 @@ public class instrucoesSonda {
 		//O método get de l irá retornar o valor de 'l'.
 		return this.l;
 	}
-
 }
