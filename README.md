@@ -21,16 +21,10 @@ A entrada de dados foi construída para que fosse solicitado ao usuário as info
 
 | Entrada dos Dados |  
 |------|
-|Informe o tamanho da área do terreno:|
-|Informe o tamanho de x: 5|
-|Informe o tamanho de y: 5|
+|Informe o tamanho do terreno: 5 5|
 ||
-|Informe a posição da Sonda:|
-|Entre com a posição de x: 1|
-|Entre com a posição de y: 2|
-|Entre com a direção cardial: N|
+|Informe a posição da Sonda e a direção cardial: 1 2 N|
 ||
-|Posição Inicial: 1, 2, N|
 |Escolha os comandos para a sonda realizar:| 
 |[L] - Para girar para esquerda: |
 |[R] - Para girar para direita: |
@@ -47,16 +41,10 @@ A entrada de dados foi construída para que fosse solicitado ao usuário as info
 |M|
 |M|
 |S|
-|Informe o tamanho da área do terreno:|
-|Informe o tamanho de x: 5|
-|Informe o tamanho de y: 5|
+|Informe o tamanho da área do terreno: 5 5|
 ||
-|Informe a posição da Sonda:|
-|Entre com a posição de x: 3|
-|Entre com a posição de y: 3|
-|Entre com a direção cardial: E|
+|Informe a posição da Sonda e a direção cardial: 3 3 E|
 ||
-|Posição Inicial: 3, 3, E|
 |Escolha os comandos para a sonda realizar:| 
 |[L] - Para girar para esquerda: |
 |[R] - Para girar para direita: |
@@ -80,5 +68,5 @@ A entrada de dados foi construída para que fosse solicitado ao usuário as info
 Na saída, é apresentado a localização final das sondas, mostrando as posições de x, y e direção cardeal, respectivamente.
 | Saída dos Dados | 
 |------|
-|Posição Final 1ª Sonda: 1, 3, N|
-|Posição Final 2ª Sonda: 5, 1, E|
+|Posição Final 1ª Sonda: 1 3 N|
+|Posição Final 2ª Sonda: 5 1 E|
