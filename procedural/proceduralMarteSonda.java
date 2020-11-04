@@ -22,7 +22,7 @@ public class proceduralMarteSonda {
 		
 		//1ª Sonda
 		System.out.println("Informe a localização da 1ª Sonda: ");
-		//Solicitado para que o usuário informe a localicação inicial da 1ª Sonda, devendo informar as posições de x, y e direção cardial.
+		//Solicitado para que o usuário informe a localicação inicial da 1ª Sonda, devendo informar as posições de x, y e direção cardeal.
 		System.out.print("Informe a localização de x: ");
 		x1 = ler.nextInt();
 		System.out.print("Informe a localização de y: ");
@@ -39,7 +39,7 @@ public class proceduralMarteSonda {
 		System.out.println("[S] - Parar: ");
 		System.out.println("Digite o comando desejado: ");
 		
-		do{ //O usuário irá informar os movimentos enquanto a entrada for != 'S' ou outro dado diferente do solicitado.
+		do{ //O usuário irá informar os movimentos enquanto a entrada for != 'S'.
 			
 			opcao = ler.next().toUpperCase(); //O método '.toUpperCase()'converte toda a String para caixa alta.
 			
@@ -47,37 +47,37 @@ public class proceduralMarteSonda {
 			
 			case "L"://Caso a entrada for igual a 'L' será realizado a lógica abaixo:
 				if (direcao1.equals("N")){
-				//Se a direção cardial atual for igual a N, será alterado para a direção W.
+				//Se a direção cardeal atual for igual a N, será alterado para a direção W.
 					direcao1 = "W";
 					
 				}else if (direcao1.equals("E")){
-				//Senão se a direção cardial atual for igual a E, será alterado para a direção N.
+				//Senão se a direção cardeal atual for igual a E, será alterado para a direção N.
 					direcao1 = "N";
 					
 				}else if (direcao1.equals("S")){
-				//Senão se a direção cardial atual for igual a S, será alterado para a direção E.
+				//Senão se a direção cardeal atual for igual a S, será alterado para a direção E.
 					direcao1 = "E";
 					
 				}else if (direcao1.equals("W")){
-				//Senão se a direção cardial atual for igual a W, será alterado para a direção S.
+				//Senão se a direção cardeal atual for igual a W, será alterado para a direção S.
 					direcao1 = "S";
 				}
 				break;
 			
 			case "R": //Caso a entrada for igual a 'R' será realizado a lógica abaixo:
 				if (direcao1.equals("N")){
-				//Se a direção cardial atual for igual a N, será alterado para a direção E.
+				//Se a direção cardeal atual for igual a N, será alterado para a direção E.
 					direcao1 = "E";
 					
 				}else if (direcao1.equals("E")){
-				//Senão se a direção cardial atual for igual a E, será alterado para a direção S.
+				//Senão se a direção cardeal atual for igual a E, será alterado para a direção S.
 					direcao1 = "S";
 					
 				}else if (direcao1.equals("S")){
-				//Senão se a direção cardial atual for igual a S, será alterado para a direção W.
+				//Senão se a direção cardeal atual for igual a S, será alterado para a direção W.
 					direcao1 = "W";
 				}else if (direcao1.equals("W")){
-				//Senão se a direção cardial atual for igual a W, será alterado para a direção N.
+				//Senão se a direção cardeal atual for igual a W, será alterado para a direção N.
 					direcao1 = "N";
 				}
 				break;
@@ -85,18 +85,18 @@ public class proceduralMarteSonda {
 			case "M": //Caso a entrada for igual a 'M' será realizado a lógica abaixo:
 				// Caso as posições x ou y forem menor do que l ou a, não será possível realizar o movimento, pois estará fora da área permitida.
 				if (direcao1.equals("N") && y1 < l){
-				//Se a direção cardial atual for igual a N e a posição de y for menor do que l, y irá andar para frente.
+				//Se a direção cardeal atual for igual a N e a posição de y for menor do que l, y irá andar para frente.
 					y1 = y1 + 1;
 					
 				}else if (direcao1.equals("S") && y1 < l){
-				//Senão se a direção cardial atual for igual a S e a posição de y for menor do que l, y irá andar para trás.
+				//Senão se a direção cardeal atual for igual a S e a posição de y for menor do que l, y irá andar para trás.
 					y1 = y1 - 1;
 					
 				}else if (direcao1.equals("E") && x1 < a){
-				//Senão se a direção cardial atual for igual a E e a posição de x for menor do que a, x irá andar para frente.
+				//Senão se a direção cardeal atual for igual a E e a posição de x for menor do que a, x irá andar para frente.
 					x1 = x1 + 1;
 				}else if (direcao1.equals("W") && x1 < a){
-				//Senão se a direção cardial atual for igual a W e a posição de x for menor do que a, x irá andar para trás.
+				//Senão se a direção cardeal atual for igual a W e a posição de x for menor do que a, x irá andar para trás.
 					x1 = x1 - 1;
 					
 				}else {
@@ -112,11 +112,11 @@ public class proceduralMarteSonda {
 			default: //Caso a entrada seja diferente das permitidas irá aparecer a mensagem abaixo.
 				System.out.println("Você digitou uma opção inválida!");
 			}		
-		}while(opcao.equals("L") || opcao.equals("M") || opcao.equals("R"));
+		}while(!opcao.equals("S"));
 		
 		//2ª Sonda
 		System.out.println("Informe a localização da 2ª Sonda: ");
-		//Solicitado para que o usuário informe a localicação inicial da 2ª Sonda, devendo informar as posições de x, y e direção cardial.
+		//Solicitado para que o usuário informe a localicação inicial da 2ª Sonda, devendo informar as posições de x, y e direção cardeal.
 		System.out.print("Informe a localização de x: ");
 		x2 = ler.nextInt();
 		System.out.print("Informe a localização de y: ");
@@ -141,37 +141,37 @@ public class proceduralMarteSonda {
 			
 			case "L"://Caso a entrada for igual a 'L' será realizado a lógica abaixo:
 				if (direcao1.equals("N")){
-				//Se a direção cardial atual for igual a N, será alterado para a direção W.
+				//Se a direção cardeal atual for igual a N, será alterado para a direção W.
 					direcao1 = "W";
 					
 				}else if (direcao1.equals("E")){
-				//Senão se a direção cardial atual for igual a E, será alterado para a direção N.
+				//Senão se a direção cardeal atual for igual a E, será alterado para a direção N.
 					direcao1 = "N";
 					
 				}else if (direcao1.equals("S")){
-				//Senão se a direção cardial atual for igual a S, será alterado para a direção E.
+				//Senão se a direção cardeal atual for igual a S, será alterado para a direção E.
 					direcao1 = "E";
 					
 				}else if (direcao1.equals("W")){
-				//Senão se a direção cardial atual for igual a W, será alterado para a direção S.
+				//Senão se a direção cardeal atual for igual a W, será alterado para a direção S.
 					direcao1 = "S";
 				}
 				break;
 			
 			case "R": //Caso a entrada for igual a 'R' será realizado a lógica abaixo:
 				if (direcao1.equals("N")){
-				//Se a direção cardial atual for igual a N, será alterado para a direção E.
+				//Se a direção cardeal atual for igual a N, será alterado para a direção E.
 					direcao1 = "E";
 					
 				}else if (direcao1.equals("E")){
-				//Senão se a direção cardial atual for igual a E, será alterado para a direção S.
+				//Senão se a direção cardeal atual for igual a E, será alterado para a direção S.
 					direcao1 = "S";
 					
 				}else if (direcao1.equals("S")){
-				//Senão se a direção cardial atual for igual a S, será alterado para a direção W.
+				//Senão se a direção cardeal atual for igual a S, será alterado para a direção W.
 					direcao1 = "W";
 				}else if (direcao1.equals("W")){
-				//Senão se a direção cardial atual for igual a W, será alterado para a direção N.
+				//Senão se a direção cardeal atual for igual a W, será alterado para a direção N.
 					direcao1 = "N";
 				}
 				break;
@@ -179,18 +179,18 @@ public class proceduralMarteSonda {
 			case "M": //Caso a entrada for igual a 'M' será realizado a lógica abaixo:
 				// Caso as posições x ou y forem menor do que l ou a, não será possível realizar o movimento, pois estará fora da área permitida.
 				if (direcao1.equals("N") && y1 < l){
-				//Se a direção cardial atual for igual a N e a posição de y for menor do que l, y irá andar para frente.
+				//Se a direção cardeal atual for igual a N e a posição de y for menor do que l, y irá andar para frente.
 					y1 = y1 + 1;
 					
 				}else if (direcao1.equals("S") && y1 < l){
-				//Senão se a direção cardial atual for igual a S e a posição de y for menor do que l, y irá andar para trás.
+				//Senão se a direção cardeal atual for igual a S e a posição de y for menor do que l, y irá andar para trás.
 					y1 = y1 - 1;
 					
 				}else if (direcao1.equals("E") && x1 < a){
-				//Senão se a direção cardial atual for igual a E e a posição de x for menor do que a, x irá andar para frente.
+				//Senão se a direção cardeal atual for igual a E e a posição de x for menor do que a, x irá andar para frente.
 					x1 = x1 + 1;
 				}else if (direcao1.equals("W") && x1 < a){
-				//Senão se a direção cardial atual for igual a W e a posição de x for menor do que a, x irá andar para trás.
+				//Senão se a direção cardeal atual for igual a W e a posição de x for menor do que a, x irá andar para trás.
 					x1 = x1 - 1;
 					
 				}else {
@@ -206,7 +206,7 @@ public class proceduralMarteSonda {
 			default: //Caso a entrada seja diferente das permitidas irá aparecer a mensagem abaixo.
 				System.out.println("Você digitou uma opção inválida!");
 			}		
-		}while(opcao.equals("L") || opcao.equals("M") || opcao.equals("R"));
+		}while(!opcao.equals("S"));
 		
 		// Será apresentado a posição final das duas sondas, pegando a informação de 'x', 'y', 'direcao'.
 		System.out.printf("\nPosição final:\n	1ª Sonda: %d %d %s\n	2ª Sonda: %d %d %s", x1, y1, direcao1, x2, y2, direcao2);
