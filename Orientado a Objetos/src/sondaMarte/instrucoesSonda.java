@@ -83,71 +83,72 @@ public class instrucoesSonda {
 			this.opcao = ler.next().toUpperCase(); //O método '.toUpperCase()'converte toda a String para caixa alta.
 
 			switch (this.opcao){
-				case "L": //Caso a entrada for igual a 'L' será realizado a lógica abaixo:
-					if (this.direcao.equals("N")){ 
-					//Se a direção cardeal atual for igual a N, será alterado para a direção W.
-						this.direcao = "W";
+			case "L": //Caso a entrada for igual a 'L' será realizado a lógica abaixo:
+				if (this.direcao.equals("N")){ 
+				//Se a direção cardeal atual for igual a N, será alterado para a direção W.
+					this.direcao = "W";
 						
-					}else if (this.direcao.equals("E")){
-					//Senão se a direção cardeal atual for igual a E, será alterado para a direção N.
-						this.direcao = "N";
+				}else if (this.direcao.equals("E")){
+				//Senão se a direção cardeal atual for igual a E, será alterado para a direção N.
+					this.direcao = "N";
 						
-					}else if (this.direcao.equals("S")){
-					//Senão se a direção cardeal atual for igual a S, será alterado para a direção E.
-						this.direcao = "E";
+				}else if (this.direcao.equals("S")){
+				//Senão se a direção cardeal atual for igual a S, será alterado para a direção E.
+					this.direcao = "E";
 						
-					}else if (this.direcao.equals("W")){
-					//Senão se a direção cardeal atual for igual a W, será alterado para a direção S.
-						this.direcao = "S";
-					}
-					break;
+				}else if (this.direcao.equals("W")){
+				//Senão se a direção cardeal atual for igual a W, será alterado para a direção S.
+					this.direcao = "S";
+				}
+				break;
 				
-				case "R": //Caso a entrada for igual a 'R' será realizado a lógica abaixo:
-					if (this.direcao.equals("N")){
-					//Se a direção cardeal atual for igual a N, será alterado para a direção E.
-						this.direcao = "E";
+			case "R": //Caso a entrada for igual a 'R' será realizado a lógica abaixo:
+				if (this.direcao.equals("N")){
+				//Se a direção cardeal atual for igual a N, será alterado para a direção E.
+					this.direcao = "E";
 						
-					}else if (this.direcao.equals("E")){
-					//Senão se a direção cardeal atual for igual a E, será alterado para a direção S.
-						this.direcao = "S";
+				}else if (this.direcao.equals("E")){
+				//Senão se a direção cardeal atual for igual a E, será alterado para a direção S.
+					this.direcao = "S";
 						
-					}else if (this.direcao.equals("S")){
-					//Senão se a direção cardeal atual for igual a S, será alterado para a direção W.
-						this.direcao = "W";
-					}else if (this.direcao.equals("W")){
-					//Senão se a direção cardeal atual for igual a W, será alterado para a direção N.
-						this.direcao = "N";
-					}
-					break;
+				}else if (this.direcao.equals("S")){
+				//Senão se a direção cardeal atual for igual a S, será alterado para a direção W.
+					this.direcao = "W";
+				}else if (this.direcao.equals("W")){
+				//Senão se a direção cardeal atual for igual a W, será alterado para a direção N.
+					this.direcao = "N";
+				}
+				break;
 				
-				case "M": //Caso a entrada for igual a 'M' será realizado a lógica abaixo:
-					// Caso as posições x ou y forem menor do que l ou a, não será possível realizar o movimento, pois estará fora da área permitida.
-					if (this.direcao.equals("N") && this.y < this.l){
-					//Se a direção cardeal atual for igual a N e a posição de y for menor do que l, y irá andar para frente.
-						this.y = this.y + 1;
-					}else if (this.direcao.equals("S") && y < this.l){
-					//Senão se a direção cardeal atual for igual a S e a posição de y for menor do que l, y irá andar para trás.
-						this.y = this.y - 1;
-					}else if (direcao.equals("E") && this.x < this.a){
-					//Senão se a direção cardeal atual for igual a E e a posição de x for menor do que a, x irá andar para frente.
-						this.x = this.x + 1;
-					}else if (direcao.equals("W") && this.x < this.a){
-					//Senão se a direção cardeal atual for igual a W e a posição de x for menor do que a, x irá andar para trás.
-						this.x = this.x - 1;
+			case "M": //Caso a entrada for igual a 'M' será realizado a lógica abaixo:
+				// Caso as posições x ou y forem menor do que l ou a, não será possível realizar o movimento, pois estará fora da área permitida.
+				if (this.direcao.equals("N") && this.y < this.l){
+				//Se a direção cardeal atual for igual a N e a posição de y for menor do que l, y irá andar para frente.
+					this.y = this.y + 1;
+				}else if (this.direcao.equals("S") && y < this.l){
+				//Senão se a direção cardeal atual for igual a S e a posição de y for menor do que l, y irá andar para trás.
+					this.y = this.y - 1;
+				}else if (direcao.equals("E") && this.x < this.a){
+				//Senão se a direção cardeal atual for igual a E e a posição de x for menor do que a, x irá andar para frente.
+					this.x = this.x + 1;
+				}else if (direcao.equals("W") && this.x < this.a){
+				//Senão se a direção cardeal atual for igual a W e a posição de x for menor do que a, x irá andar para trás.
+					this.x = this.x - 1;
 					
-					}else {
-					//Senão o movimento não será computado, pois entende-se que estará fora do terreno.
-						System.out.println("Fora da área permitida!"); //Movimento não computado.
-					}
-					break;
+				}else {
+				//Senão o movimento não será computado, pois entende-se que estará fora do terreno.
+					System.out.println("Fora da área permitida!"); //Movimento não computado.
+				}
+				break;
 				
-				case "S": //Caso a entrada for igual a 'S' será interrompido os movimentos.
-					break;
+			case "S": //Caso a entrada for igual a 'S' será interrompido os movimentos.
+				break;
 					
-				default: //Caso a entrada seja diferente das permitidas irá aparecer a mensagem abaixo.
-					System.out.println("Você digitou uma opção inválida!");
-					break;
+			default: //Caso a entrada seja diferente das permitidas irá aparecer a mensagem abaixo.
+				System.out.println("Você digitou uma opção inválida!");
+				break;
 			}
+			
 		}while(!this.opcao.equals("S"));
 	}
 	
