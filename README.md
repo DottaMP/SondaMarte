@@ -41,7 +41,7 @@ A entrada de dados foi construída para que fosse solicitado ao usuário as info
 |M|
 |M|
 |S|
-|Informe o tamanho da área do terreno: 5 5|
+|Informe o tamanho do terreno: 5 5|
 ||
 |Informe a posição da Sonda e a direção cardeal: 3 3 E|
 ||
