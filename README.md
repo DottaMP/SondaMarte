@@ -25,22 +25,6 @@ A entrada de dados foi construída para que fosse solicitado ao usuário as info
 ||
 |Informe a posição da Sonda e a direção cardeal: 1 2 N|
 ||
-|Escolha os comandos para a sonda realizar:| 
-|[L] - Para girar para esquerda: |
-|[R] - Para girar para direita: |
-|[M] - Para mover para frente mantendo a mesma direção: |
-|[S] - Parar: |
-|Digite o comando desejado: |
-|L|
-|M|
-|L|
-|M|
-|L|
-|M|
-|L|
-|M|
-|M|
-|S|
 |Informe o tamanho do terreno: 5 5|
 ||
 |Informe a posição da Sonda e a direção cardeal: 3 3 E|
