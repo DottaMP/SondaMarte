@@ -45,24 +45,6 @@ A entrada de dados foi construída para que fosse solicitado ao usuário as info
 ||
 |Informe a posição da Sonda e a direção cardeal: 3 3 E|
 ||
-|Escolha os comandos para a sonda realizar:| 
-|[L] - Para girar para esquerda: |
-|[R] - Para girar para direita: |
-|[M] - Para mover para frente mantendo a mesma direção: |
-|[S] - Parar: |
-|Digite o comando desejado: |
-|M|
-|M|
-|R|
-|M|
-|M|
-|M|
-|Fora da área permitida!|
-|R|
-|R|
-|M|
-|Fora da área permitida!|
-|S| 
  
 ## Saída
 Na saída, é apresentado a localização final das sondas, mostrando as posições de x, y e direção cardeal, respectivamente.
